@@ -1,0 +1,9 @@
+# General
+*.DS_Store
+
+# CV
+*.aux
+*.log
+*.out
+*.pdf
+*.synctex.gz

@@ -1,0 +1,239 @@
+%-------------------------
+% Resume in Latex
+% Author : Victor Verma
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Large \scshape Victor Verma} \\ \vspace{1pt}
+    \href{mailto:victor.verma@hotmail.com}{\underline{victor.verma@hotmail.com}} $|$ 
+    \href{https://www.victorverma.com}{\underline{victorverma.com}} $|$ 
+    \href{https://linkedin.com/in/victorverma/}{\underline{linkedin.com/in/victorverma}} $|$
+    \href{https://github.com/victorverma3}{\underline{github.com/victorverma3}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Boston University}{Boston, MA}
+      {B.A. in Mathematics \& Computer Science, Minor in Data Science}{May 2025}
+      \resumeItemListStart
+        \resumeItem{\textbf{Honors/Activities:} Magna Cum Laude, 3.89 GPA, Dean’s List, Kappa Theta Pi, Men’s Rugby. }
+        \resumeItem{\textbf{Relevant Courses:} Machine Learning and AI, Data Science Tools and Applications, Natural Language Processing, Stochastic Algorithms, Stochastic Processes, Probability, Linear Algebra, Multivariate Calculus, Algorithms, Differential Equations, Database Systems, Computing Systems, Engineering for Big Data, Software Engineering. }
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Boston University}{Boston, MA}
+      {Research Assistant $|$ \href{https://github.com/victorverma3/Undergraduate-Research/tree/main/state_medical_boards}{\underline{Identifying Physician Discipline Trends with NLP}}}{Aug 2024 - May 2025}
+      \resumeItemListStart
+        \resumeItem{Trained and evaluated \textbf{DSPy chain-of-thought programs} to flag disciplinary violations (malpractice, fraud, improper prescriptions, DEA involvement, patient harm, and more) across \textbf{70,000} legal case documents.}
+        \resumeItem{Designed a large-scale toolkit to preprocess state medical board disciplinary records, including utilities for text chunking, token management, structured sampling, and case summarization.}
+        \resumeItem{Improved model reliability through targeted DSPy optimization using an unnormalized Hamming accuracy score.}
+      \resumeItemListEnd
+      
+      \resumeSubSubheading
+      {Research Assistant $|$ \href{https://github.com/victorverma3/Undergraduate-Research/tree/main/candidate_bios}{\underline{Large-Scale Mining and Classification of State Legislator Demographics}}}{Jan 2023 - May 2024}
+      \resumeItemListStart
+        \resumeItem{Created a large-scale dataset documenting the education and work history of \textbf{150,000} U.S. State Legislator candidates from 1967 to 2017, revealing that only 40\% of candidates have information available online.}
+        \resumeItem{Designed and implemented an \textbf{NLP pipeline} for zero-shot extraction of unstructured biodata using the \textbf{OpenAI API (GPT-3.5)} and \textbf{Google Custom Search}, achieving \textbf{80\%} accuracy for post-1998 candidates by optimizing prompt engineering. }
+        \resumeItem{Established a rigorous validation framework to identify invalid or hallucinated LLM outputs with a \textbf{0.80 F1} score, training \textbf{XGBoost}, \textbf{random forest}, and \textbf{neural models} on labeled validation data.}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Savvas Learning Company}{Boston, MA}
+      {Associate Software Developer}{June 2025 - Present}
+      \resumeItemListStart
+        \resumeItem{Built an internal MCP server for GitHub Copilot using \textbf{FastMCP}, increasing developer productivity by enabling engineers to export their codebase as a text file to Google Gemini in less than \textbf{20 seconds}.}
+        \resumeItem{Augmented training datasets by applying NLP techniques and statistical methods, and fine-tuned \textbf{RoBERTa} models that provide feedback on K-12 student essays using \textbf{PyTorch}.}
+      \resumeItemListEnd
+      
+      \resumeSubSubheading
+      {Software Development Engineering Intern}{Jun 2024 - Aug 2024}
+      \resumeItemListStart
+        \resumeItem{Developed a \textbf{ReAct agent} utilizing \textbf{Python}, \textbf{Amazon Bedrock}, and the \textbf{LlamaIndex API}, allowing employees to query enterprise documentation and the GitHub codebase efficiently.}
+        \resumeItem{Incorporated the \textbf{Confluence and GitHub APIs} to automate the upload of \textbf{500+} Confluence documents and GitHub README files to \textbf{S3 buckets}, constructing a comprehensive knowledge base for the chatbot. }
+        \resumeItem{Launched the ReAct agent as a service using \textbf{AWS Lambda}, featuring a \textbf{Gradio} frontend and \textbf{FastAPI} backend, and configured role-based access for employees through \textbf{Google OAuth}.}
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+  
+%-----------POSTER PRESENTATIONS-----------
+\section{Poster Presentations}
+          \resumeItemListStart
+            \resumeItem{\textit{“BU Sustainability: Water-Filling Stations”} – Boston University Spark! Demo Day, May 2024.}
+            \resumeItem{\textit{“Using Large Language Models for Massive Political Science Data Scraping”} – Boston University Annual Undergraduate Research Symposium, October 2023.}
+          \resumeItemListEnd
+          
+%-----------HONORS AND AWARDS-----------
+\section{Honors and Awards}
+          \resumeItemListStart
+            \resumeItem{BU Undergraduate Research Opportunities Program Faculty Matching Grant – Spring 2024.}
+            \resumeItem{BU Undergraduate Research Opportunities Program Student Research Award – Fall 2023, Summer 2023.}
+          \resumeItemListEnd
+          
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{\href{https://recommendations.victorverma.com/}{\underline{Letterboxd Movie Recommendations}}}}{}          
+          \resumeItemListStart
+            \resumeItem{Built a movie recommendation website serving \textbf{12,000+ users} across \textbf{135+ countries} that uses \textbf{content-based filtering} with \textbf{random forests} and \textbf{90,000+ data points} to suggest movies based on the user’s Letterboxd profile.}
+            \resumeItem{Created with \textbf{React}, \textbf{TypeScript}, \textbf{Tailwind CSS}, \textbf{Flask}, \textbf{Supabase}, and \textbf{Amazon Lightsail}, and implemented \textbf{Redis-based caching} to reduce response latency by up to \textbf{10x}.}
+            \resumeItem{Designed features including group recommendations, \textbf{10+} real-time statistics, exportable visualizations, a watchlist-based movie picker (recommendations or random), and compatibility between profiles.}
+            \resumeItem{Improved reliability with \textbf{rate limiting}, automated data updates, and \textbf{CI/CD} pipelines via \textbf{5 GitHub Actions}.}
+            \resumeItem{Boosted organic visibility and revenue through \textbf{SEO optimizations} and \textbf{Google AdSense} integration. }
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/victorverma3/Movie-Review-Emotions}{\underline{Ekman Emotion Classifier}}}}{}          
+          \resumeItemListStart
+            \resumeItem{Built a \textbf{feed-forward neural network} using \textbf{PyTorch} to classify text into six emotion categories, optimizing performance using SGD and grid search to achieve a macro F1 score of \textbf{0.57} and F1 scores nearing \textbf{0.70} for well-represented classes.}
+            \resumeItem{Applied the model to label the emotions expressed in \textbf{65,000+} reviews of \textbf{65} top-rated Letterboxd films, and uncovered trends between movie characteristics and viewer sentiment.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/ktpbu/website/tree/main/backend/assistant}{\underline{Kappa Theta Pi Lambda Chapter Website}}}}{}          
+          \resumeItemListStart
+            \resumeItem{Engineered the chatbot on the fraternity website following the \textbf{RAG agent} architecture, leveraging \textbf{Hugging Face} for inference, \textbf{Pinecone} for context retrieval, and \textbf{Google Cloud Functions} for scalable deployment.}
+            \resumeItem{Led a \textbf{6-member team} to build the fraternity database with \textbf{React}, \textbf{Node.js}, \textbf{Supabase}, and \textbf{MongoDB} with \textbf{Google OAuth} using \textbf{Firebase}, hosting academic and professional resources for 111 fraternity members.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/victorverma3/Electricity-Consumption}{\underline{Analyzing Energy Consumption Trends across New England}}}}{}          
+          \resumeItemListStart
+            \resumeItem{Collaborated in a cross-functional team to develop an end-to-end Azure data pipeline (\textbf{ADF}, \textbf{Synapse}, \textbf{Blob Storage}) for processing \textbf{420,000+ hours} of batch and streaming electricity usage data across New England, integrating U.S. Energy Information Administration and Census APIs using a \textbf{medallion architecture}. }
+            \resumeItem{Predicted hourly electricity demand with a 10\% error rate using a \textbf{random forest} model trained on temporal and demographic features, automated forecasts with scheduled ADF pipelines, and designed \textbf{Power BI} dashboards to visualize historical trends and model performance.}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages/Tools:}{ Python, SQL, JavaScript/TypeScript, Java, Git, Docker.} \\
+     \textbf{AI/ML:}{ Scikit-learn, PyTorch, TensorFlow, FastMCP, LlamaIndex, Hugging Face, DSPy, OpenAI, LLMs, pandas, NumPy.} \\
+     \textbf{Cloud/Web:}{ AWS/Azure/GCP, Node.js, Flask, FastAPI, React, PostgreSQL, Pinecone, MongoDB, Firebase, Gradio.}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
