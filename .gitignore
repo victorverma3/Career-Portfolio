@@ -1,11 +1,11 @@
 # General
 *.DS_Store
 
-# CV
-*.aux
-*.fdb_latexmk
-*.fls
-*.log
-*.out
-*.pdf
-*.synctex.gz
+# CV LaTeX Artifacts
+CV/**/*.aux
+CV/**/*.fdb_latexmk
+CV/**/*.fls
+CV/**/*.log
+CV/**/*.out
+CV/**/*.pdf
+CV/**/*.synctex.gz
