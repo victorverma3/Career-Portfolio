@@ -127,6 +127,29 @@
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Savvas Learning Company}{Boston, MA}
+      {Associate Software Developer}{Jun 2025 - Present}
+      \resumeItemListStart
+      	\resumeItem{Developed an \textbf{XLM-RoBERTa} model to classify sentence types in K-12 writing (\textbf{0.89 F1}), reducing LLM annotation costs by \textbf{33\%} when balancing training datasets for other internal models.}
+	\resumeItem{Optimized a sentence fragment detection model (\textbf{0.85 F1}) by designing tooling infrastructure to synthetically label the sentence type, English quality, and fragmentation of \textbf{25,000+} training sentences using \textbf{Amazon Bedrock}.}
+        \resumeItem{Implemented a \textbf{FastMCP} server for GitHub Copilot, enabling Savvas engineers to seamlessly export their codebase context to Google Gemini in under \textbf{20 seconds} for AI assistance.}
+      	\resumeItem{Improved the latent space separability of supporting evidence embeddings across 6 subcategories, measured by the cosine similarity of their respective centroids, by balancing the pairwise comparisons training dataset through Jensen-Shannon-informed downsampling and probabilistic upsampling.}
+      \resumeItemListEnd
+      
+      \resumeSubSubheading
+      {Software Development Engineering Intern}{Jun 2024 - Aug 2024}
+      \resumeItemListStart
+        \resumeItem{Developed a \textbf{ReAct agent} allowing Savvas employees to efficiently query internal Confluence documentation and GitHub codebases, utilizing \textbf{Python}, \textbf{Amazon Bedrock}, and the \textbf{LlamaIndex API}.}
+        \resumeItem{Constructed a comprehensive knowledge base for the chatbot and automated the upload of \textbf{500+} Confluence documents and GitHub README files to \textbf{S3 buckets} using the Confluence and GitHub APIs.}
+        \resumeItem{Launched the ReAct agent as a service using \textbf{AWS Lambda}, featuring a \textbf{Gradio} frontend and \textbf{FastAPI} backend, and configured role-based access for employees through \textbf{Google OAuth}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
 
 %-----------RESEARCH EXPERIENCE-----------
 \section{Research Experience}
@@ -145,33 +168,10 @@
       {Research Assistant $|$ \href{https://github.com/victorverma3/Undergraduate-Research/tree/main/candidate_bios}{\underline{Large-Scale Mining and Classification of State Legislator Demographics}}}{Jan 2023 - May 2024}
       \resumeItemListStart
         \resumeItem{Created a novel biographical dataset of \textbf{130,000} U.S. State Legislator candidates (1968-2022), overcoming extreme data sparsity to recover education information for \textbf{74,000} and work histories for \textbf{47,000} candidates to identify advanced degree holders and elite institution graduates.}
-        \resumeItem{Designed and implemented an \textbf{NLP pipeline} for zero-shot extraction of unstructured biodata from the internet using  \textbf{Google Custom Search} and \textbf{ChatGPT-3.5}, achieving \textbf{80\% accuracy} for post-1998 candidates through prompt engineering. }
+        \resumeItem{Architected an \textbf{NLP pipeline} to enable the zero-shot search, retrieval, and extraction of unstructured biographical data from the internet, achieving \textbf{80\%+ accuracy}, using the \textbf{Google Custom Search} and \textbf{OpenAI APIs} optimized with multithreading, retrying, PDF parsing, and error logging.}
         \resumeItem{Established a rigorous validation framework to identify invalid or hallucinated LLM outputs with a \textbf{0.80 F1} score, training \textbf{XGBoost}, \textbf{random forest}, and \textbf{neural models} on labeled validation data.}
       \resumeItemListEnd
       
-  \resumeSubHeadingListEnd
-
-%-----------WORK EXPERIENCE-----------
-\section{Work Experience}
-  \resumeSubHeadingListStart
-  
-    \resumeSubheading
-      {Savvas Learning Company}{Boston, MA}
-      {Associate Software Developer}{Jun 2025 - Present}
-      \resumeItemListStart
-      	\resumeItem{Designed tooling infrastructure to synthetically label the sentence type, English quality, and fragmentation of \textbf{25,000+} sentences using Claude Haiku 4.5, and fine-tuned a \textbf{RoBERTa classifier} using \textbf{PyTorch}, achieving a \textbf{0.85 F1} score in sentence fragment detection in K-12 student essays.}
-        \resumeItem{Built an internal \textbf{FastMCP} server for GitHub Copilot, enabling engineers to seamlessly export their codebase context to Google Gemini in under \textbf{20 seconds} for AI assistance.}
-      	\resumeItem{Optimized the latent space separability of supporting evidence embeddings by balancing subcategory distributions in the dataset through downsampling (informed by Jensen-Shannon divergence) and probabilistic upsampling.}
-      \resumeItemListEnd
-      
-      \resumeSubSubheading
-      {Software Development Engineering Intern}{Jun 2024 - Aug 2024}
-      \resumeItemListStart
-        \resumeItem{Developed a \textbf{ReAct agent} utilizing \textbf{Python}, \textbf{Amazon Bedrock}, and the \textbf{LlamaIndex API}, allowing employees to query enterprise documentation and the GitHub codebase efficiently.}
-        \resumeItem{Incorporated the \textbf{Confluence and GitHub APIs} to automate the upload of \textbf{500+} Confluence documents and GitHub README files to \textbf{S3 buckets}, constructing a comprehensive knowledge base for the chatbot. }
-        \resumeItem{Launched the ReAct agent as a service using \textbf{AWS Lambda}, featuring a \textbf{Gradio} frontend and \textbf{FastAPI} backend, and configured role-based access for employees through \textbf{Google OAuth}.}
-      \resumeItemListEnd
-
   \resumeSubHeadingListEnd
   
 %-----------POSTER PRESENTATIONS-----------
@@ -199,34 +199,33 @@
     \resumeSubHeadingListStart
     
       \resumeProjectHeading
-          {\textbf{\href{https://recommendations.victorverma.com/}{\underline{Letterboxd Movie Recommendations}}}}{}          
+          {\textbf{\href{https://recommendations.victorverma.com/}{\underline{Letterboxd Movie Recommendations}}} $|$ \textit{React, TypeScript, Flask, Supabase, Amazon Lightsail, Redis}}{}          
           \resumeItemListStart
-            \resumeItem{Built a movie recommendation website serving \textbf{13,000+ users} across \textbf{135+ countries} that uses \textbf{content-based filtering} with \textbf{random forests} and \textbf{90,000+ data points} to suggest movies based on the user’s Letterboxd profile.}
-            \resumeItem{Created with \textbf{React}, \textbf{TypeScript}, \textbf{Tailwind CSS}, \textbf{Flask}, \textbf{Supabase}, and \textbf{Amazon Lightsail}, and implemented \textbf{Redis-based caching} to reduce response latency by up to \textbf{10x}.}
+            \resumeItem{Built a movie recommendation website serving \textbf{13,000+ users} across \textbf{135+ countries}, leveraging \textbf{content-based filtering} and a \textbf{random forest regressor} to suggest movies based on the user’s Letterboxd profile.}
             \resumeItem{Designed features including group recommendations, \textbf{10+} real-time statistics, exportable visualizations, a watchlist-based movie picker (recommendations or random), and compatibility between profiles.}
-            \resumeItem{Improved reliability with \textbf{custom rate limiting}, automated data updates, and \textbf{CI/CD} pipelines via \textbf{5 GitHub Actions}.}
+            \resumeItem{Reduced latency by up to \textbf{10x} using \textbf{Redis}, and improved reliability with \textbf{custom rate limiting}, automated data updates, and \textbf{CI/CD} pipelines via \textbf{5 GitHub Actions}.}
             \resumeItem{Boosted organic visibility and revenue through \textbf{SEO optimizations} and \textbf{Google AdSense} integration. }
           \resumeItemListEnd
           
       \resumeProjectHeading
-          {\textbf{\href{https://github.com/victorverma3/Movie-Review-Emotions}{\underline{Ekman Emotion Classifier}}}}{}          
+          {\textbf{\href{https://github.com/victorverma3/Movie-Review-Emotions}{\underline{Ekman Emotion Classifier}}} $|$ \textit{PyTorch, pandas, Hugging Face, Matplotlib}}{}          
           \resumeItemListStart
-            \resumeItem{Built a \textbf{feed-forward neural network} using \textbf{PyTorch} to classify text into six emotion categories, optimizing performance using SGD and grid search to achieve a macro F1 score of \textbf{0.57} and F1 scores nearing \textbf{0.70} for well-represented classes.}
+            \resumeItem{Developed a \textbf{feed-forward neural network} to classify text into six emotion categories, optimizing performance using SGD and grid search to achieve a \textbf{0.57 macro F1} score, and individual class scores nearing \textbf{0.70}.}
             \resumeItem{Applied the model to label the emotions expressed in \textbf{65,000+} reviews of \textbf{65} top-rated Letterboxd films, and uncovered trends between movie characteristics and viewer sentiment.}
           \resumeItemListEnd
           
       \resumeProjectHeading
-          {\textbf{\href{https://github.com/ktpbu/website/tree/main/backend/assistant}{\underline{Kappa Theta Pi Lambda Chapter Website}}}}{}          
+          {\textbf{\href{https://github.com/ktpbu/website/tree/main/backend/assistant}{\underline{Kappa Theta Pi Lambda Chapter Website}}} $|$ \textit{Google Cloud, React, Node.js, Supabase, MongoDB}}{}          
           \resumeItemListStart
-            \resumeItem{Engineered the chatbot on the fraternity website following the \textbf{RAG agent} architecture, leveraging \textbf{Hugging Face} for inference, \textbf{Pinecone} for context retrieval, and \textbf{Google Cloud Functions} for scalable deployment.}
-            \resumeItem{Led a \textbf{6-member team} to build the fraternity database with \textbf{React}, \textbf{Node.js}, \textbf{Supabase}, and \textbf{MongoDB} with \textbf{Google OAuth} using \textbf{Firebase}, hosting academic and professional resources for 111 fraternity members.}
+            \resumeItem{Architected a serverless \textbf{RAG agent} chatbot, integrating \textbf{Pinecone} for vector search and \textbf{Hugging Face} for inference, deployed via \textbf{Google Cloud Functions} for on-demand scalability.}
+            \resumeItem{Directed a cross-functional team of \textbf{6} to deliver a \textbf{full-stack} fraternity platform featuring \textbf{Google OAuth} using \textbf{Firebase} and a centralized resource database for \textbf{111} active members.}
           \resumeItemListEnd
           
       \resumeProjectHeading
-          {\textbf{\href{https://github.com/victorverma3/Electricity-Consumption}{\underline{Analyzing Energy Consumption Trends across New England}}}}{}          
+          {\textbf{\href{https://github.com/victorverma3/Electricity-Consumption}{\underline{Energy Consumption Trends across New England}}} $|$ \textit{Azure, Scikit-Learn, pandas, Power BI}}{}          
           \resumeItemListStart
-            \resumeItem{Collaborated in a cross-functional team to develop an end-to-end Azure data pipeline (\textbf{ADF}, \textbf{Synapse}, \textbf{Blob Storage}) for processing \textbf{420,000+ hours} of batch and streaming electricity usage data across New England, integrating U.S. Energy Information Administration and Census APIs using a \textbf{medallion architecture}. }
-            \resumeItem{Predicted hourly electricity demand with a 10\% error rate using a \textbf{random forest} model trained on temporal and demographic features, automated forecasts with scheduled ADF pipelines, and designed \textbf{Power BI} dashboards to visualize historical trends and model performance.}
+            \resumeItem{Developed an end-to-end \textbf{Azure} data pipeline (\textbf{ADF}, \textbf{Synapse}, \textbf{Blob Storage}) utilizing a \textbf{medallion architecture} to process \textbf{420,000+ hours} of batch and streaming electricity data from EIA and Census APIs.}
+            \resumeItem{Forecasted hourly electricity demand with a \textbf{10\% error rate} using a \textbf{Random Forest} model trained on temporal and demographic features, automated predictive workflows via scheduled \textbf{ADF pipelines}, and designed \textbf{Power BI} dashboards for stakeholder visualization.}
           \resumeItemListEnd
           
     \resumeSubHeadingListEnd
@@ -235,8 +234,8 @@
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages/Tools:}{ Python, SQL, JavaScript/TypeScript, Java, Git, Docker.} \\
-     \textbf{AI/ML:}{ Scikit-learn, PyTorch, TensorFlow, Hugging Face, FastMCP, LlamaIndex, DSPy, OpenAI, LLMs, pandas, NumPy.} \\
+     \textbf{Languages/Tools:}{ Python, SQL, JavaScript/TypeScript, Java, Git, Docker, Postman.} \\
+     \textbf{AI/ML:}{ PyTorch, TensorFlow, Scikit-Learn, Hugging Face, FastMCP, LlamaIndex, DSPy, pandas, NumPy.} \\
      \textbf{Cloud/Web:}{ AWS/Azure/GCP, Node.js, Flask, FastAPI, React, PostgreSQL, Pinecone, MongoDB, Firebase, Gradio.}
     }}
  \end{itemize}
