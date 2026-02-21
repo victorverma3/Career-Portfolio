@@ -1,0 +1,189 @@
+%-------------------------
+% CV in LaTeX
+% Author : Victor Verma
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Large \scshape Victor Verma} \\ \vspace{1pt}
+    \href{mailto:victor.verma@hotmail.com}{\underline{victor.verma@hotmail.com}} $|$ 
+    \href{https://www.victorverma.com}{\underline{victorverma.com}} $|$ 
+    \href{https://linkedin.com/in/victorverma/}{\underline{linkedin.com/in/victorverma}} $|$
+    \href{https://github.com/victorverma3}{\underline{github.com/victorverma3}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Boston University}{Boston, MA}
+      {B.A. in Mathematics \& Computer Science, Minor in Data Science}{May 2025}
+      \resumeItemListStart
+        \resumeItem{\textbf{Honors/Activities:} Magna Cum Laude, 3.89 GPA, Dean’s List, Undergraduate Research Opportunities Program (UROP) Faculty Matching Grant, UROP Student Research Award (2x), Kappa Theta Pi, Men’s Rugby.}
+        \resumeItem{\textbf{Coursework:} Machine Learning and AI, Data Science Tools and Applications, Natural Language Processing, Stochastic Algorithms, Stochastic Processes, Probability, Linear Algebra, Multivariate Calculus, Algorithms, Differential Equations, Database Systems, Computing Systems, Engineering for Big Data, Software Engineering.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Savvas Learning Company}{Boston, MA}
+      {Associate Software Developer}{Jun 2025 - Present}
+      \resumeItemListStart
+      	\resumeItem{Developed an \textbf{XLM-RoBERTa} model to classify sentence types in K-12 writing (\textbf{0.89 F1}), reducing LLM annotation costs by \textbf{33\%} when balancing training datasets for other internal models.}
+	\resumeItem{Optimized a sentence fragment detection model (\textbf{0.85 F1}) by designing tooling infrastructure to synthetically label the sentence type, English quality, and fragmentation of \textbf{25,000+} training sentences using \textbf{Amazon Bedrock}.}
+        \resumeItem{Implemented a \textbf{FastMCP} server for GitHub Copilot, enabling Savvas engineers to seamlessly export their codebase context to Google Gemini in under \textbf{20 seconds} for AI assistance.}
+      	\resumeItem{Improved the latent space separability of supporting evidence embeddings across 6 subcategories, measured by the cosine similarity of their respective centroids, by balancing the pairwise comparisons training dataset through Jensen-Shannon-informed downsampling and probabilistic upsampling.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Boston University}{Boston, MA}
+      {Research Assistant $|$ \href{https://github.com/victorverma3/Undergraduate-Research/tree/main/state_medical_boards}{\underline{Identifying Physician Discipline Trends with NLP}}}{Aug 2024 - May 2025}
+      \resumeItemListStart
+        \resumeItem{Trained and evaluated \textbf{DSPy chain-of-thought programs} to flag disciplinary violations (malpractice, fraud, improper prescriptions, DEA involvement, patient harm, and more) across \textbf{70,000} legal case documents.}
+        \resumeItem{Designed a large-scale toolkit to preprocess state medical board disciplinary records, including utilities for text chunking, token management, structured sampling, and case summarization.}
+        \resumeItem{Improved model reliability through targeted DSPy optimization using an unnormalized Hamming accuracy score.}
+      \resumeItemListEnd
+      
+      \resumeSubSubheading
+      {Research Assistant $|$ \href{https://github.com/victorverma3/Undergraduate-Research/tree/main/candidate_bios}{\underline{Large-Scale Mining and Classification of State Legislator Demographics}}}{Jan 2023 - May 2024}
+      \resumeItemListStart
+        \resumeItem{Created a novel biographical dataset of \textbf{130,000} U.S. State Legislator candidates (1968-2022), overcoming extreme data sparsity to recover education information for \textbf{74,000} and work histories for \textbf{47,000} candidates to identify advanced degree holders and elite institution graduates.}
+        \resumeItem{Architected an \textbf{NLP pipeline} to enable the zero-shot search, retrieval, and extraction of unstructured biographical data from the internet, achieving \textbf{80\%+ accuracy}, using the \textbf{Google Custom Search} and \textbf{OpenAI APIs} optimized with multithreading, retrying, PDF parsing, and error logging.}
+        \resumeItem{Established a rigorous validation framework to identify invalid or hallucinated LLM outputs with a \textbf{0.80 F1} score, training \textbf{XGBoost}, \textbf{random forest}, and \textbf{neural models} on labeled validation data.}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+          
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{\href{https://recommendations.victorverma.com/}{\underline{Letterboxd Movie Recommendations}}} $|$ \textit{React, TypeScript, Flask, Supabase, Amazon Lightsail, Redis}}{}          
+          \resumeItemListStart
+            \resumeItem{Built a movie recommendation website serving \textbf{13,000+ users} across \textbf{135+ countries}, leveraging \textbf{content-based filtering} and a \textbf{random forest regressor} to suggest movies based on the user’s Letterboxd profile.}
+            \resumeItem{Designed features including group recommendations, \textbf{10+} real-time statistics, exportable visualizations, a watchlist-based movie picker (recommendations or random), and compatibility between profiles.}
+            \resumeItem{Reduced latency by up to \textbf{10x} using \textbf{Redis}, and improved reliability with \textbf{custom rate limiting}, automated data updates, and \textbf{CI/CD} pipelines via \textbf{5 GitHub Actions}.}
+            \resumeItem{Boosted organic visibility and revenue through \textbf{SEO optimizations} and \textbf{Google AdSense} integration. }
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages/Tools:}{ Python, SQL, TypeScript/JavaScript, Java, Git, Docker, Postman.} \\
+     \textbf{AI/ML:}{ PyTorch, TensorFlow, Scikit-Learn, Hugging Face, FastMCP, LlamaIndex, DSPy, Pinecone, pandas, NumPy.} \\
+     \textbf{Cloud/Web:}{ AWS/Azure/GCP, Node.js, Flask, FastAPI, React, PostgreSQL, MongoDB, Firebase, Gradio.}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
