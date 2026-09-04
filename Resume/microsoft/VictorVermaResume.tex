@@ -43,7 +43,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\topmargin}{-0.5in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -54,7 +54,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-10pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -122,15 +122,15 @@
       {Georgia Institute of Technology}{Atlanta, GA}
       {M.S. in Computer Science \--- Machine Learning Specialization}{}
       \resumeItemListStart
-        \resumeItem{\textbf{Coursework/Activities:} Machine Learning, Natural Language Understanding, Computer Vision, Men's Rugby.}
+        \resumeItem{\textbf{Coursework/Activities:} Machine Learning, Natural Language, Computer Vision, Men's Rugby.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Boston University}{Boston, MA}
       {B.A. in Mathematics \& Computer Science, Minor in Data Science}{}
       \resumeItemListStart
-        \resumeItem{\textbf{Honors/Activities:} Magna Cum Laude, 3.89 GPA, Undergraduate Research Opportunities Program (UROP) Student Research Award (2x), UROP Faculty Matching Grant, Dean’s List (6x), Kappa Theta Pi, Men’s Rugby.}
-        \resumeItem{\textbf{Graduate-Level Coursework:} Natural Language Processing, Data Science Tools and Applications, Stochastic Algorithms, Stochastic Processes, Probability, Engineering for Big Data.}
+        \resumeItem{\textbf{Honors/Activities:} Magna Cum Laude, 3.89 GPA, Research Award (3x), Kappa Theta Pi, Men’s Rugby.}
+        \resumeItem{\textbf{Selected Coursework:} Stochastic Algorithms, Stochastic Processes, Probability, Engineering for Big Data.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
   
@@ -138,9 +138,9 @@
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
+     \textbf{AI/ML:}{ PyTorch, scikit-learn, NumPy, pandas, Hugging Face, FastMCP, LlamaIndex, DSPy, Pinecone.} \\
      \textbf{Languages/Tools:}{ Python, SQL, TypeScript/JavaScript, Git, Docker, Postman.} \\
-     \textbf{AI/ML:}{ PyTorch, Scikit-Learn, Hugging Face, FastMCP, LlamaIndex, DSPy, Pinecone, pandas, NumPy.} \\
-     \textbf{Cloud/Web:}{ AWS/Azure, PySpark, Node.js, Flask, FastAPI, React, PostgreSQL, MongoDB, Firebase.}
+     \textbf{Cloud/Web:}{ AWS/Azure, PySpark, Node.js, Flask, FastAPI, React, MongoDB.}
     }}
  \end{itemize}
 
@@ -152,26 +152,27 @@
       {Savvas Learning Company}{Boston, MA}
       {Associate Software Developer}{Jun 2025 - Aug 2026}
       \resumeItemListStart
-      	\resumeItem{Designed a modular \textbf{Multi-Task Learning} framework (\textbf{PyTorch, Hugging Face}) using a shared transformer backbone with task-specific heads, reducing training time by \textbf{40\%} and optimizing convergence through Automatic Mixed Precision, interleaved cyclic DataLoaders, gradient clipping, and custom multi-objective loss weighting.}
-	\resumeItem{Developed a sentence type classifier and a sentence fragment detector for K-12 writing by refining tooling infrastructure leveraging Amazon Bedrock to synthetically label data, with the former model reducing annotation costs by \textbf{33\%} when assembling training datasets for other production models.}
+      	\resumeItem{Designed a modular \textbf{Multi-Task Learning} framework (\textbf{PyTorch, Hugging Face}) using transformer models with task heads, cutting training time by \textbf{40\%} via AMP, interleaved DataLoaders, and multi-objective loss weighting.}
+	\resumeItem{Developed binary classifiers to detect sentence type and sentence fragments in K-12 writing by refining tooling infrastructure leveraging \textbf{Amazon Bedrock} to synthetically label data, with the former model reducing annotation costs by \textbf{33\%} when assembling training datasets for other production models.}
         \resumeItem{Implemented a \textbf{FastMCP} server for GitHub Copilot, enabling internal engineers to seamlessly export codebase context to Google Gemini in under \textbf{20 seconds} for AI assistance.}
         \resumeItem{Increased embedding separability for 6 subcategories of evidence in essays by applying probabilistic sampling to pairwise training data, minimizing centroid similarity to improve classification accuracy on edge-case inputs.}
+      \resumeItemListEnd
+      \resumeSubSubheading
+      {Software Development Engineering Intern}{Jun 2024 - Aug 2024}
+      \resumeItemListStart
+        \resumeItem{Built a \textbf{RAG agent} to efficiently query internal Confluence documentation and GitHub codebases, utilizing Python, Amazon Bedrock, \textbf{Pinecone}, and the \textbf{LlamaIndex} API.}
+        \resumeItem{Automated ETL of 500+ Confluence and GitHub documents to S3, deployed the RAG agent as a service using \textbf{FastAPI} and \textbf{AWS Lambda}, and configured role-based access for employees through Google OAuth.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Boston University}{Boston, MA}
-      {Research Assistant $|$ \href{https://github.com/victorverma3/Undergraduate-Research/tree/main/state_medical_boards}{\underline{Identifying Physician Discipline Trends with NLP}}}{Aug 2024 - May 2025}
+      {Research Assistant $\mid$ \href{https://github.com/victorverma3/Undergraduate-Research}{\underline{GitHub Repository}}}{Jan 2023 - May 2025}
       \resumeItemListStart
-        \resumeItem{Optimized \textbf{DSPy chain-of-thought pipelines} to identify occurrences of 13 disciplinary violations across \textbf{70,000} unstructured legal case documents while creating a scalable and automated qualitative labeling workflow.}
-        \resumeItem{Constructed a large-scale toolkit to preprocess state medical board disciplinary records, including utilities for text chunking, token management, structured sampling, and case summarization.}
-      \resumeItemListEnd
-      
-      \resumeSubSubheading
-      {Research Assistant $|$ \href{https://github.com/victorverma3/Undergraduate-Research/tree/main/candidate_bios}{\underline{Large-Scale Mining and Classification of State Legislator Demographics}}}{Jan 2023 - May 2024}
-      \resumeItemListStart
-        \resumeItem{Created a novel biographical dataset of \textbf{130,000} U.S. State Legislator candidates (1968-2022), overcoming extreme data sparsity to recover education info for \textbf{74,000} and work histories for \textbf{47,000} candidates to identify advanced degree holders and elite institution graduates, underlying the analysis in \href{https://www.nber.org/papers/w33626}{\textbf{\underline{NBER Working Paper 33626}}}.}
-        \resumeItem{Architected an \textbf{NLP pipeline} to enable the zero-shot search, retrieval, and extraction of unstructured biographical data from the internet, achieving \textbf{80\%+ accuracy}, using the \textbf{Google Custom Search} and \textbf{OpenAI APIs} optimized with multithreading, exponential retrying, PDF parsing, and error logging.}
+        \resumeItem{Created a novel biographical dataset of \textbf{130,000} U.S. State Legislator candidates (1968-2022), recovering education info for \textbf{74,000} and work histories for \textbf{47,000} candidates; utilized in \href{https://www.nber.org/papers/w33626}{\textbf{\underline{NBER Working Paper 33626}}}.}
+        \resumeItem{Designed an \textbf{NLP pipeline} to enable the zero-shot search, retrieval, and extraction of unstructured biographical data from the internet, achieving \textbf{80\%+ accuracy}, using the \textbf{Google Custom Search} and \textbf{OpenAI APIs}.}
+        \resumeItem{Optimized pipeline execution by reducing runtime by \textbf{32x} via multithreading, improving runtime stability with exponential retrying, and handling visual search results through PDF parsing and OCR.}
         \resumeItem{Established a rigorous validation framework to identify invalid or hallucinated LLM outputs with a \textbf{0.80 F1} score, training \textbf{XGBoost}, \textbf{random forest}, and \textbf{neural models} on labeled validation data.}
+        \resumeItem{Tuned \textbf{DSPy chain-of-thought pipelines} to identify occurrences of 13 disciplinary violations across \textbf{70,000} unstructured legal documents and constructed a large-scale toolkit to preprocess state medical board records, including utilities for text chunking, token management, structured sampling, and case summarization.}
       \resumeItemListEnd
       
   \resumeSubHeadingListEnd
@@ -181,11 +182,10 @@
     \resumeSubHeadingListStart
     
       \resumeProjectHeading
-          {\textbf{\href{https://recommendations.victorverma.com/}{\underline{Letterboxd Movie Recommendations}}} $|$ \textit{React, TypeScript, Flask, Supabase, Amazon Lightsail, Redis}}{}          
+          {\textbf{\href{https://recommendations.victorverma.com/}{\underline{Letterboxd Movie Recommendations}}} $\mid$ \textit{React, TypeScript, Flask, Supabase, Amazon Lightsail, Redis}}{}          
           \resumeItemListStart
             \resumeItem{Built a movie recommendation website serving \textbf{13,000+ users} across \textbf{135+ countries}, leveraging \textbf{content-based filtering} and personalized \textbf{random forest regressors} to suggest movies based on the user’s Letterboxd profile.}
-            \resumeItem{Reduced end-to-end latency by \textbf{83\% (30s to $<$5s)} using \textbf{Redis} and LRU feature caching, while orchestrating automated, asynchronous \textbf{GitHub Actions} for ingesting and updating metadata for \textbf{100,000+} movies.}
-            \resumeItem{Designed features including group recommendations, a profile compatibility algorithm, \textbf{10+} real-time user statistics, dynamic watchlist-based filtering, and exportable visualizations.}
+            \resumeItem{Reduced end-to-end latency by \textbf{83\% (30s to $<$5s)} using \textbf{Redis} and LRU feature caching while orchestrating automated, asynchronous \textbf{GitHub Actions} for ingesting and updating metadata for \textbf{100,000+} movies.}
           \resumeItemListEnd
           
     \resumeSubHeadingListEnd
