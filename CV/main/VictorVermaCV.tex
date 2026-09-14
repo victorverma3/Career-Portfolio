@@ -121,12 +121,15 @@
     \resumeSubheading
       {Georgia Institute of Technology}{Atlanta, GA}
       {M.S. in Computer Science \--- Machine Learning Specialization}{Aug 2026 - Dec 2027}
+      \resumeItemListStart
+        \resumeItem{\textbf{Coursework/Activities:} Machine Learning, Natural Language, Computer Vision, Men's Rugby.}
+      \resumeItemListEnd
       
     \resumeSubheading
       {Boston University}{Boston, MA}
       {B.A. in Mathematics \& Computer Science, Minor in Data Science}{May 2025}
       \resumeItemListStart
-        \resumeItem{\textbf{Honors/Activities:} Magna Cum Laude, 3.89 GPA, Undergraduate Research Opportunities Program (UROP) Student Research Award (2x), UROP Faculty Matching Grant, Dean’s List (6x), Kappa Theta Pi, Men’s Rugby.}
+        \resumeItem{\textbf{Honors/Activities:} Magna Cum Laude, 3.89 GPA, Dean’s List, Kappa Theta Pi, Men’s Rugby.}
         \resumeItem{\textbf{Graduate-Level Coursework:} Natural Language Processing, Data Science Tools and Applications, Stochastic Algorithms, Stochastic Processes, Probability, Engineering for Big Data.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
@@ -139,18 +142,16 @@
       {Savvas Learning Company}{Boston, MA}
       {Associate Software Developer}{Jun 2025 - Aug 2026}
       \resumeItemListStart
-      	\resumeItem{Designed a modular \textbf{Multi-Task Learning} framework (\textbf{PyTorch, Hugging Face}) using a shared transformer backbone with task-specific heads, reducing training time by \textbf{40\%} and optimizing convergence through Automatic Mixed Precision, interleaved cyclic DataLoaders, gradient clipping, and custom multi-objective loss weighting.}
-	\resumeItem{Developed a sentence type classifier and a sentence fragment detector for K-12 writing by refining tooling infrastructure leveraging Amazon Bedrock to synthetically label data, with the former model reducing annotation costs by \textbf{33\%} when assembling training datasets for other production models.}
+      	\resumeItem{Designed a modular \textbf{Multi-Task Learning} framework (\textbf{PyTorch, Hugging Face}) using transformer models with task heads, cutting training time by \textbf{40\%} via AMP, interleaved DataLoaders, and multi-objective loss weighting.}
+	\resumeItem{Developed binary classifiers to detect sentence type and sentence fragments in K-12 writing by refining tooling infrastructure leveraging \textbf{Amazon Bedrock} to synthetically label data, with the former model reducing annotation costs by \textbf{33\%} when assembling training datasets for other production models.}
         \resumeItem{Implemented a \textbf{FastMCP} server for GitHub Copilot, enabling internal engineers to seamlessly export codebase context to Google Gemini in under \textbf{20 seconds} for AI assistance.}
         \resumeItem{Increased embedding separability for 6 subcategories of evidence in essays by applying probabilistic sampling to pairwise training data, minimizing centroid similarity to improve classification accuracy on edge-case inputs.}
       \resumeItemListEnd
-      
       \resumeSubSubheading
       {Software Development Engineering Intern}{Jun 2024 - Aug 2024}
       \resumeItemListStart
-        \resumeItem{Developed a \textbf{ReAct agent} allowing Savvas employees to efficiently query internal Confluence documentation and GitHub codebases, utilizing \textbf{Python}, \textbf{Amazon Bedrock}, and the \textbf{LlamaIndex API}.}
-        \resumeItem{Constructed a comprehensive knowledge base for the chatbot and automated the upload of \textbf{500+} Confluence documents and GitHub README files to \textbf{S3 buckets} using the Confluence and GitHub APIs.}
-        \resumeItem{Launched the ReAct agent as a service using \textbf{AWS Lambda}, featuring a \textbf{Gradio} frontend and \textbf{FastAPI} backend, and configured role-based access for employees through \textbf{Google OAuth}.}
+        \resumeItem{Built a \textbf{RAG agent} to efficiently query internal Confluence documentation and GitHub codebases, utilizing Python, Amazon Bedrock, \textbf{Pinecone}, and the \textbf{LlamaIndex} API.}
+        \resumeItem{Automated ETL of 500+ Confluence and GitHub documents to S3, deployed the RAG agent as a service using \textbf{FastAPI} and \textbf{AWS Lambda}, and configured role-based access for employees through Google OAuth.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -163,15 +164,15 @@
       {Boston University}{Boston, MA}
       {Research Assistant $|$ \href{https://github.com/victorverma3/Undergraduate-Research/tree/main/state_medical_boards}{\underline{Identifying Physician Discipline Trends with NLP}}}{Aug 2024 - May 2025}
       \resumeItemListStart
-        \resumeItem{Optimized \textbf{DSPy chain-of-thought pipelines} to identify occurrences of 13 disciplinary violations across \textbf{70,000} unstructured legal case documents while creating a scalable and automated qualitative labeling workflow.}
-        \resumeItem{Constructed a large-scale toolkit to preprocess state medical board disciplinary records, including utilities for text chunking, token management, structured sampling, and case summarization.}
-      \resumeItemListEnd
+         \resumeItem{Tuned \textbf{DSPy chain-of-thought pipelines} to identify occurrences of 13 disciplinary violations across \textbf{70,000} unstructured legal documents and constructed a large-scale toolkit to preprocess state medical board records, including utilities for text chunking, token management, structured sampling, and case summarization.}
+         \resumeItemListEnd
       
       \resumeSubSubheading
       {Research Assistant $|$ \href{https://github.com/victorverma3/Undergraduate-Research/tree/main/candidate_bios}{\underline{Large-Scale Mining and Classification of State Legislator Demographics}}}{Jan 2023 - May 2024}
       \resumeItemListStart
-        \resumeItem{Created a novel biographical dataset of \textbf{130,000} U.S. State Legislator candidates (1968-2022), overcoming extreme data sparsity to recover education info for \textbf{74,000} and work histories for \textbf{47,000} candidates to identify advanced degree holders and elite institution graduates, underlying the analysis in \href{https://www.nber.org/papers/w33626}{\textbf{\underline{NBER Working Paper 33626}}}.}
-        \resumeItem{Architected an \textbf{NLP pipeline} to enable the zero-shot search, retrieval, and extraction of unstructured biographical data from the internet, achieving \textbf{80\%+ accuracy}, using the \textbf{Google Custom Search} and \textbf{OpenAI APIs} optimized with multithreading, exponential retrying, PDF parsing, and error logging.}
+        \resumeItem{Created a novel biographical dataset of \textbf{130,000} U.S. State Legislator candidates (1968-2022), recovering education info for \textbf{74,000} and work histories for \textbf{47,000} candidates; utilized in \href{https://www.nber.org/papers/w33626}{\textbf{\underline{NBER Working Paper 33626}}}.}
+        \resumeItem{Designed an \textbf{NLP pipeline} to enable the zero-shot search, retrieval, and extraction of unstructured biographical data from the internet, achieving \textbf{80\%+ accuracy}, using the \textbf{Google Custom Search} and \textbf{OpenAI APIs}.}
+        \resumeItem{Optimized pipeline execution by reducing runtime by \textbf{32x} via multithreading, improving large-scale stability with exponential retrying, and handling visual search results through PDF parsing and OCR.}
         \resumeItem{Established a rigorous validation framework to identify invalid or hallucinated LLM outputs with a \textbf{0.80 F1} score, training \textbf{XGBoost}, \textbf{random forest}, and \textbf{neural models} on labeled validation data.}
       \resumeItemListEnd
       
@@ -188,7 +189,8 @@
 \section{Honors and Awards}
           \resumeItemListStart
             \resumeItem{BU Undergraduate Research Opportunities Program (UROP) Faculty Matching Grant -- Spring 2024.}
-            \resumeItem{BU UROP Student Research Award -- Fall 2023, Summer 2023.}
+            \resumeItem{BU UROP Student Research Award -- Fall 2023.}
+            \resumeItem{BU UROP Student Research Award -- Summer 2023.}
           \resumeItemListEnd
 
 %-----------CERTIFICATES-----------
@@ -205,8 +207,7 @@
           {\textbf{\href{https://recommendations.victorverma.com/}{\underline{Letterboxd Movie Recommendations}}} $|$ \textit{React, TypeScript, Flask, Supabase, Amazon Lightsail, Redis}}{}          
           \resumeItemListStart
             \resumeItem{Built a movie recommendation website serving \textbf{13,000+ users} across \textbf{135+ countries}, leveraging \textbf{content-based filtering} and personalized \textbf{random forest regressors} to suggest movies based on the user’s Letterboxd profile.}
-            \resumeItem{Reduced end-to-end latency by \textbf{83\% (30s to $<$5s)} using \textbf{Redis} and LRU feature caching, while orchestrating automated, asynchronous \textbf{GitHub Actions} for ingesting and updating metadata for \textbf{100,000+} movies.}
-            \resumeItem{Designed features including group recommendations, a profile compatibility algorithm, \textbf{10+} real-time user statistics, dynamic watchlist-based filtering, and exportable visualizations.}
+            \resumeItem{Reduced end-to-end latency by \textbf{83\% (30s to $<$5s)} using \textbf{Redis} and LRU feature caching while orchestrating automated, asynchronous \textbf{GitHub Actions} for ingesting and updating metadata for \textbf{100,000+} movies.}
             \resumeItem{Boosted organic visibility and revenue through \textbf{SEO optimizations} and \textbf{Google AdSense} integration. }
           \resumeItemListEnd
           
@@ -218,17 +219,10 @@
           \resumeItemListEnd
           
       \resumeProjectHeading
-          {\textbf{\href{https://github.com/ktpbu/website/tree/main/backend/assistant}{\underline{Kappa Theta Pi Lambda Chapter Website}}} $|$ \textit{Google Cloud, React, Node.js, Supabase, MongoDB}}{}          
-          \resumeItemListStart
-            \resumeItem{Architected a serverless \textbf{RAG agent} chatbot, integrating \textbf{Pinecone} for vector search and \textbf{Hugging Face} for inference, deployed via \textbf{Google Cloud Functions} for on-demand scalability.}
-            \resumeItem{Directed a cross-functional team of \textbf{6} to deliver a \textbf{full-stack} fraternity platform featuring \textbf{Google OAuth} using \textbf{Firebase} and a centralized resource database for \textbf{111} active members.}
-          \resumeItemListEnd
-          
-      \resumeProjectHeading
           {\textbf{\href{https://github.com/victorverma3/Electricity-Consumption}{\underline{Energy Consumption Trends across New England}}} $|$ \textit{Azure, Scikit-Learn, pandas, Power BI}}{}          
           \resumeItemListStart
             \resumeItem{Developed an end-to-end \textbf{Azure} data pipeline (\textbf{ADF}, \textbf{Synapse}, \textbf{Blob Storage}) utilizing a \textbf{medallion architecture} to process \textbf{420,000+ hours} of batch and streaming electricity data from EIA and Census APIs.}
-            \resumeItem{Forecasted hourly electricity demand with a \textbf{10\% error rate} using a \textbf{Random Forest} model trained on temporal and demographic features, automated predictive workflows via scheduled \textbf{ADF pipelines}, and designed \textbf{Power BI} dashboards for stakeholder visualization.}
+            \resumeItem{Forecasted hourly electricity demand with a \textbf{10\% error rate} using a \textbf{random forest} model trained on temporal and demographic features, automated predictive workflows via scheduled \textbf{ADF pipelines}, and designed \textbf{Power BI} dashboards for stakeholder visualization.}
           \resumeItemListEnd
           
     \resumeSubHeadingListEnd
@@ -237,9 +231,9 @@
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
+     \textbf{AI/ML:}{ PyTorch, scikit-learn, NumPy, pandas, Hugging Face, FastMCP, LlamaIndex, DSPy, Pinecone.} \\
      \textbf{Languages/Tools:}{ Python, SQL, TypeScript/JavaScript, Git, Docker, Postman.} \\
-     \textbf{AI/ML:}{ PyTorch, Scikit-Learn, Hugging Face, FastMCP, LlamaIndex, DSPy, Pinecone, pandas, NumPy.} \\
-     \textbf{Cloud/Web:}{ AWS/Azure, PySpark, Node.js, Flask, FastAPI, React, PostgreSQL, MongoDB, Firebase.}
+     \textbf{Cloud/Web:}{ AWS/Azure, PySpark, Node.js, Flask, FastAPI, React, MongoDB.}
     }}
  \end{itemize}
 
